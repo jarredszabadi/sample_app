@@ -15,4 +15,11 @@ describe "StaticPages" do
   		page.should have_content("Help")
   	end
   end
+
+  describe "About Page" do
+  	it "should have the content About Us" do
+  		visit "/static_pages/about"
+  		pages.should have_content("About Us")
+  	end
+  end
 end
